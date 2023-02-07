@@ -1,0 +1,253 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    size: 3.5rem;
+    line-height: 1.5;
+    color: #fff;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 3rem;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+    padding: 1% 5%;
+
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+/* -------nav bar ------------ */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* download button */
+.download-btn {
+    margin: 5% 3% 5% 0;
+
+}
+
+/* --title img------- */
+
+.title-img {
+    width: 20%;
+
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+@media(max-width: 971px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-img {
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+}
+
+/* ----------features------------- */
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    padding: 4.5%;
+    text-align: center;
+}
+
+.fontawesome {
+    color: #ef8172;
+    font-size: 55px;
+    padding: 5%;
+}
+
+.fontawesome:hover {
+    color: #ff4c68;
+}
+
+/* ------------Testimonials---------------- */
+#testimonials {
+    background-color: #ef8172;
+
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.img-testimonials {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* -------------Press ----------------- */
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+
+
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 50px;
+
+}
+
+
+/* ------------pricing------------ */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 4% 3%;
+
+}
+/* -----------------Call to Action-------------------- */
+#cta{
+    color: #fff;
+    background-color: #ff4c68;
+    padding:7% 15%;
+    text-align: center;
+  
+}
+/* .btn{
+    margin: 7% 2%;
+} */
+.cta-font{
+
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+} 
+
+/* -------- Footer------------- */
+#footer{
+    text-align: center;
+    background-color:#fff;
+    padding: 7% 15%;
+}
+.footer-icon{
+    padding:7px 10px;
+}
+
+.footer-para{
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px; 
+  max-height:150px; 
+  
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
